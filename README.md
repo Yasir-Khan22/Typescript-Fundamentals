@@ -59,3 +59,15 @@ function user(obj: {name: string, age: number, email?: string, department?: stri
 }
 user({name: "yasir"})
 ```
+
+# Union Types
+
+Typescript allow developers to use new types out of existing one.Union type is a type which is formed by two or more other types with the help of the some **operator**.
+
+```typescript
+ function printID(id: string | number) {
+    console.log("Here is your id:", id)
+ }
+ printID("stringOne") // stringOne
+ printID(30) // 30
+```
