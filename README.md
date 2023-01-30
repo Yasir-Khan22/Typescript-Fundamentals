@@ -65,9 +65,28 @@ user({name: "yasir"})
 Typescript allow developers to use new types out of existing one.Union type is a type which is formed by two or more other types with the help of the some **operator**.
 
 ```typescript
+// here I represented the possible values by string or number by | operator.
  function printID(id: string | number) {
     console.log("Here is your id:", id)
  }
  printID("stringOne") // stringOne
  printID(30) // 30
+
+// another example 
+function printDetails(Id: string[] | number) = {
+ console.log(id)
+}
+printDetails(["stringOne", "stringTwo"]) // ["stringOne", "stringTwo"]
+
+function greetings(str: string[] | number) {
+
+    if(Array.isArray(str)) {
+      console.log(`Hello, ${str.join(" and " )}`)
+    }else {
+      console.log("welcome lone traveller " + x)
+    }
+}
+
+greeting(["stringOne", "stringTwo"]) 
+greeting(23) 
 ```
