@@ -6,13 +6,18 @@
 // // printDetail(30)
 
 
-function greeting(str: string[] | number[]) {
-    if (Array.isArray(str)) {
-        console.log(`hello, ${str.join(" and ")} `)
-    } else {
-        console.log(`welcome Lone Warrior. ${str}`)
-    }
-}
+const heros = ["Saluhuddin Ayubi", "Mohammad Bin Qasim", "Khalid Bin Waleed"]
+heros.map(hero => {
+    console.log(`Hero is coming: ${hero}`)
+})
 
-greeting(["stringOne", "stringTwo"])
-greeting([11, 12, 13])
+// function greeting(str: string[] | number[]) {
+//     if (Array.isArray(str)) {
+//         console.log(`hello, ${str.join(" and ")} `)
+//     } else {
+//         console.log(`welcome Lone Warrior. ${str}`)
+//     }
+// }
+
+// greeting(["stringOne", "stringTwo"])
+// greeting([11, 12, 13])
