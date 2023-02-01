@@ -1,4 +1,4 @@
-# Typescript Basics
+ Typescript Basics
 
 ## Typescript is all about ***TYPES***
 1. NUMBER
@@ -127,4 +127,4 @@ function displayId(id: functionTypes) {
 }
 displayId("2345E3")
 displayId(233221)
-```
+``` 
