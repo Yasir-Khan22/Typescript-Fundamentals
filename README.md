@@ -90,3 +90,41 @@ function greetings(str: string[] | number) {
 greeting(["stringOne", "stringTwo"]) 
 greeting(23) 
 ```
+# Type Aliases 
+
+Type Alias is exactly that - a ***name*** for any type.
+In typescript, type aliases give a type a new name.They are similar like interfaces but used to give a new type to primitives. Aliasing doesn't create a new type, but It gives just a new to type.
+So summary is Just give another name to the type.
+
+## Creating Normal Type Aliases
+
+```Typescript
+type NormalType = string | boolean | number;
+
+const stringValue: NormalType; // assigned type alias for variable stringValue.
+stringValue = "stringOne"; // stringOne
+
+const numberValue: NormalType; // assinged type alias for variable numberValue.
+numberValue = 99; // 99
+
+const booleanValue: NormalType; // assigned type alias for variable booleanValue.
+booleanValue = false; // false 
+```
+
+
+## Creating Type Alaises for functions.
+
+```typescript
+type functionTypes = number | string;
+let variable: string
+
+function displayId(id: functionTypes) {
+ if(typeof id === typeof variable) {
+  console.log(`This is my secret ID: ${id}`)
+ }else {
+  console.log(`here is my ID ${id.toString()}`)
+ }
+}
+displayId("2345E3")
+displayId(233221)
+```
