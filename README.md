@@ -127,4 +127,8 @@ function displayId(id: functionTypes) {
 }
 displayId("2345E3")
 displayId(233221)
-``` 
+```
+
+# Interface
+
+In typescript, It is like we are using type aliases here, matter of fact is that it act like we are using an anonymous object here.Typescript only cares about the structure of the values pass to them.
