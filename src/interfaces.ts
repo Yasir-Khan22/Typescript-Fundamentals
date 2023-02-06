@@ -1,4 +1,5 @@
 // this is the simple example of interface.
+
 // interface User {
 //     name: string;
 //     age: number;
@@ -13,21 +14,34 @@
 
 // interface as function type
 
-interface keyValueProcessor { (key: number, value: string): void; }
+// interface keyValuePair { (key: number, value: string): void; }
 
 
-function addKeyValue(key: number, value: string): void {
-    console.log("addkey: key = " + key + " value = " + value)
-}
+// function addKeyValue(key: number, value: string): void {
+//     console.log("addkey: key = " + key + " value = " + value)
+// }
 
-function updateKeyValue(key: number, value: string): void {
-    console.log("updateKey: key = " + key + " value = " + value)
-}
+// function updateKeyValue(key: number, value: string): void {
+//     console.log("updateKey: key = " + key + " value = " + value)
+// }
 
-const keyValuePair: keyValueProcessor = addKeyValue;
+// let keyValueOne: keyValuePair = addKeyValue;
+// let keyValueTwo: keyValuePair = updateKeyValue;
+// keyValueOne(33, "Mohammad Bin Qasim.")
+// keyValueTwo(23, "Billy Bowdan")
 
-keyValuePair(33, "Mohammad Bin Qasim.")
+// interface for array type.
+// specifi for number type.
+interface numList { [index: number]: number }
 
-keyValuePair2: updateKeyValue;
+let numberArray: numList = [23, 24, 25]
+console.log(numberArray[0])
+console.log(numberArray[1])
+console.log(numberArray[2])
 
-keyValuePair2(23, "Billy Bowdan")
+// specific for string type.
+interface stringList { [index: string]: string }
+let stringArray: stringList = {};
+console.log(stringArray["JS"] = "Javascript");
+console.log(stringArray["TS"] = "Typescript");
+console.log(stringArray)

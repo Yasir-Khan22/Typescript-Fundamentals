@@ -131,4 +131,57 @@ displayId(233221)
 
 # Interface
 
-In typescript, It is like we are using type aliases here, matter of fact is that it act like we are using an anonymous object here.Typescript only cares about the structure of the values pass to them.
+1. Interface is used to define the structure of objects and functions same as type aliases. 
+2. In typescript, It is like we are using type aliases here, matter of fact is that it act like we are using an anonymous object here.Typescript only cares about the structure of the values pass to them.
+3. If the structure of the functions and objects, then it will generate onspot compile time errors.
+
+```typescript
+interface User {
+  name: string;
+  age: number:
+  email: string
+}
+
+const userOne: User = {
+  name: "yasir",
+  age: 22,
+  email: "abc@gmail.com"
+}
+console.log(userOne)
+```
+
+# Interface for function type
+
+```typescript
+interface keyValuePair { (key: number, value: string): void; }
+
+function addKeyValue(key: number, value: string): void {
+    console.log("addkey: key = " + key + " value = " + value)
+}
+
+function updateKeyValue(key: number, value: string): void {
+    console.log("updateKey: key = " + key + " value = " + value)
+}
+
+let keyValueOne: keyValuePair = addKeyValue;
+let keyValueTwo: keyValuePair = updateKeyValue;
+keyValueOne(33, "Mohammad Bin Qasim.")
+keyValueTwo(23, "Billy Bowdan")
+```
+
+# Interface for array type.
+
+```typescript
+interface numList {[index: number]: number}
+
+let numberArray: numList = [22, 23, 24];
+console.log(numberArray[0]) // 22
+console.log(numberArray[1]) // 23 
+console.log(numberArray[2]) // 24
+
+interface stringlist {[index: string]: string}
+
+let stringString: stringList ={}; 
+console.log(stringOne["JS"] = "Javascript") // Javascript
+console.log(stringTwo["TS"] = "Typescript") // Typescript
+```
