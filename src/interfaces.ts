@@ -47,27 +47,27 @@
 // console.log(stringArray)
 
 
-interface Employee {
-    empID: number,
-    empAge: number,
-    empDepart?: string
-}
+// interface Employee {
+//     empID: number,
+//     empAge: number,
+//     empDepart?: string
+// }
 
 
-interface Person extends Employee {
-    readonly isLogged?: boolean;
-}
+// interface Person extends Employee {
+//     readonly isLogged?: boolean;
+// }
 
-const employeeTwo: Person = {
-    empID: 2,
-    empAge: 22,
-    empDepart: "Finance Department"
-}
-const employeeOne: Person = {
-    empID: 1,
-    empAge: 24,
-    isLogged: true
-}
+// const employeeTwo: Person = {
+//     empID: 2,
+//     empAge: 22,
+//     empDepart: "Finance Department"
+// }
+// const employeeOne: Person = {
+//     empID: 1,
+//     empAge: 24,
+//     isLogged: true
+// }
 
-console.log(employeeOne)
-console.log(employeeTwo)
+// console.log(employeeOne)
+// console.log(employeeTwo)
