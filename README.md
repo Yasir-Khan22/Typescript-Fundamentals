@@ -150,7 +150,7 @@ const userOne: User = {
 console.log(userOne)
 ```
 
-# Interface for function type
+## Interface for function type
 
 ```typescript
 interface keyValuePair { (key: number, value: string): void; }
@@ -169,7 +169,7 @@ keyValueOne(33, "Mohammad Bin Qasim.")
 keyValueTwo(23, "Billy Bowdan")
 ```
 
-# Interface for array type.
+## Interface for array type.
 
 ```typescript
 interface numList {[index: number]: number}
@@ -185,3 +185,65 @@ let stringString: stringList ={};
 console.log(stringOne["JS"] = "Javascript") // Javascript
 console.log(stringTwo["TS"] = "Typescript") // Typescript
 ```
+## Optional Properties
+
+We can have optional properties ***?*** in interface objects. In such Cases, the objects of the interface will not define these properties.
+
+```typescript
+interface Employee {
+  empId: number,
+  empName: string,
+  empDepart?: string // ? optional property
+} 
+
+const employeeOne: Employee = {
+  empId: 2,
+  empName: "Khilji"
+}
+
+const employeeTwo: Employee = {
+  empId: 3,
+  empName: "Saluddin",
+  empDepart: "Finance Department"
+}
+
+console.log(employeeOne) // ok
+console.log(employeeTwo) // ok
+```
+
+## Interface can be extended.
+
+Interfaces can be extended to one or more interfaces. This makes interfaces more flexible or reusable.
+
+
+```typescript
+interface Person {
+  name: string;
+  gender: string;
+}
+interface Employee extends Person {
+  status: string;
+}
+
+
+let person: Employee = {
+  name: "string";
+  gender: "Male";
+  status: "Ok"
+}
+```
+# Type Assertions 
+
+- Type assertions in typescript is a technique to tells the compiler not the infer the **TYPE** of the variable.The compiler **on its own** infer the type of the variable. By doing type assertions we can prevent it.
+- If we want to change the variable from one type to another such as any to number etc, then we use type assertion.
+- We can use angle brackets **<>** or either **as** keyword to do type assertions. The **as** keyword is recommended other then **<>** because in JSX it will create ambiguity.
+
+```Javascript
+var foo = {};
+foo.bar = 123; // Error: property 'bar' does not exist on `{}`
+foo.bas = 'hello'; // Error: property 'bas' does not exist on `{}`
+```
+Here the code errors because the inferred type of `foo` is `{}` i.e. an object with zero properties. Therefore you are not allowed to add bar or bas to it. You can fix this simply by a type assertion `as Foo`:
+
+## Type assertion in objects
+
