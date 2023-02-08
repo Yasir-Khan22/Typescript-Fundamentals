@@ -1,11 +1,15 @@
 "use strict";
 // this is the simple example of interface.
-let numberArray = [23, 24, 25];
-console.log(numberArray[0]);
-console.log(numberArray[1]);
-console.log(numberArray[2]);
-let stringArray = {};
-console.log(stringArray["JS"] = "Javascript");
-console.log(stringArray["TS"] = "Typescript");
-console.log(stringArray);
+const employeeTwo = {
+    empID: 2,
+    empAge: 22,
+    empDepart: "Finance Department"
+};
+const employeeOne = {
+    empID: 1,
+    empAge: 24,
+    isLogged: true
+};
+console.log(employeeOne);
+console.log(employeeTwo);
 //# sourceMappingURL=interfaces.js.map

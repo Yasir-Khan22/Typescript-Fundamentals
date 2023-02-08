@@ -32,16 +32,42 @@
 
 // interface for array type.
 // specifi for number type.
-interface numList { [index: number]: number }
+// interface numList { [index: number]: number }
 
-let numberArray: numList = [23, 24, 25]
-console.log(numberArray[0])
-console.log(numberArray[1])
-console.log(numberArray[2])
+// let numberArray: numList = [23, 24, 25]
+// console.log(numberArray[0])
+// console.log(numberArray[1])
+// console.log(numberArray[2])
 
-// specific for string type.
-interface stringList { [index: string]: string }
-let stringArray: stringList = {};
-console.log(stringArray["JS"] = "Javascript");
-console.log(stringArray["TS"] = "Typescript");
-console.log(stringArray)
+// // specific for string type.
+// interface stringList { [index: string]: string }
+// let stringArray: stringList = {};
+// console.log(stringArray["JS"] = "Javascript");
+// console.log(stringArray["TS"] = "Typescript");
+// console.log(stringArray)
+
+
+interface Employee {
+    empID: number,
+    empAge: number,
+    empDepart?: string
+}
+
+
+interface Person extends Employee {
+    readonly isLogged?: boolean;
+}
+
+const employeeTwo: Person = {
+    empID: 2,
+    empAge: 22,
+    empDepart: "Finance Department"
+}
+const employeeOne: Person = {
+    empID: 1,
+    empAge: 24,
+    isLogged: true
+}
+
+console.log(employeeOne)
+console.log(employeeTwo)
