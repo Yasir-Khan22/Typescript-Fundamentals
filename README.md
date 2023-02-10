@@ -245,5 +245,50 @@ foo.bas = 'hello'; // Error: property 'bas' does not exist on `{}`
 ```
 Here the code errors because the inferred type of `foo` is `{}` i.e. an object with zero properties. Therefore you are not allowed to add bar or bas to it. You can fix this simply by a type assertion `as Foo`:
 
-## Type assertion in objects
+## Type assertion for Objects.
 
+# Enums
+
+- Enums also known as enumerations, added into Javascript by Typescript.
+- Enums allow use to use and declare a set of named constants i,e that can be numeric or string.
+- There are three types of enums
+  - Numeric Enum
+  - String Enum
+  - Heterogeneous Enum
+
+## Numeric Enum
+
+- Numberic enum store string values as number. Numeric enums are alwasy number based enums.
+
+```typescript
+enum SocialMedia {
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+}
+```
+- In the above example, `SocialMedia` enum the initial member starts from value `0` and incremented to each member by `1`. You just not only assign seqential values. These enums can have any values. `Yeah`
+ 
+```Typescript
+enum SocialMedia {
+  Facebook = 20,
+  Twitter = 30,
+  Instagram = 5,
+  LinkedIn = 24
+} // ok
+```
+
+## String Enum
+
+- The difference is that string enum store `string values` rather than numeric values. 
+- String enum offer better `readability` if we have to debug a program then it will be easier to `read` string values as compared to numeric values.
+
+```typescript
+enum PrintMeida {
+  Jang = "Jang",
+  Express = "Express",
+  Dawn = "Dawn",
+  Tribune = "Tribune"
+} // string enum initialized with string values.
+```
