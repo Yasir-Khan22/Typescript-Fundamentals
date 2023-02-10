@@ -1,0 +1,1 @@
+// Enums explanation goes here.
