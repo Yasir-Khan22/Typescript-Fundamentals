@@ -292,3 +292,21 @@ enum PrintMeida {
   Tribune = "Tribune"
 } // string enum initialized with string values.
 ```
+
+# What is actually Type Narrowing?
+
+- Type narrowing is actually a narrow down a general type to more specific and precise one.
+- Type narrowing is basically `reducing` the type of `variable` or `expression` based on the surronding text.
+- This will allow to be more type specific information to be `inferred` at `compile time`, imporving the overall `type checking` of the code.
+
+```typescript
+let x: number | string;
+x = 34;
+
+if(typeOf x === "number") {
+  console.log(x.toFixed(2)) // ok
+  x = "Hello"; // x is now string.
+}
+
+console.log(x.toFixed(2)) // error: methods of type number are not assignable to type string.
+```
