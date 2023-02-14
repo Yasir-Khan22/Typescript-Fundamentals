@@ -247,6 +247,8 @@ Here the code errors because the inferred type of `foo` is `{}` i.e. an object w
 
 ## Type assertion for Objects.
 
+type assertions for objects will go here.
+
 # Enums
 
 - Enums also known as enumerations, added into Javascript by Typescript.
