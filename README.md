@@ -247,6 +247,25 @@ Here the code errors because the inferred type of `foo` is `{}` i.e. an object w
 
 ## Type assertion for Objects.
 
+We may sometimes encounter a circumstance in which we will defined an object without any initial values, properties. In such cases, the compiler will throw an error. However, We can prevent this by applying type assertions for objects.
+
+```typescript
+let person = {};
+person.name = "yasir" // Compiler Error: property name does not exist on type {}.
+person.role = "ux designer" // Compiler Error: property role does not exist on type {}.
+```
+
+```typescript
+interface Person {
+  name: string
+  role: string
+}
+
+let employee = <Person> {};
+employee.name = "yasir" // ok
+employee.role = "ux designer" // ok
+```
+
 type assertions for objects will go here.
 
 # Enums
