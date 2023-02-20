@@ -1,4 +1,4 @@
- Typescript Basics
+Typescript Basics
 
 ## Typescript is all about ***TYPES***
 1. NUMBER
