@@ -23,6 +23,12 @@ const numberOne: number = 99; // Here (: number) is type annotation for variable
 // Boolean
 const isLoggedIn: boolean = true;
 ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+
 # Function Annotations
 
 ## Type annotations for function parameters. 
@@ -38,6 +44,11 @@ function Add(a: number, b: string) {
 }
 console.log(Add(10, "stringThree")) // 10stringThree
 ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 
 # Object Types 
 
@@ -59,6 +70,11 @@ function user(obj: {name: string, age: number, email?: string, department?: stri
 }
 user({name: "yasir"})
 ```
+
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 # Union Types
 
@@ -90,6 +106,12 @@ function greetings(str: string[] | number) {
 greeting(["stringOne", "stringTwo"]) 
 greeting(23) 
 ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+
 # Type Aliases 
 
 Type Alias is exactly that - a ***name*** for any type.
@@ -128,6 +150,12 @@ function displayId(id: functionTypes) {
 displayId("2345E3")
 displayId(233221)
 ```
+
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 
 # Interface
 
@@ -168,6 +196,13 @@ let keyValueTwo: keyValuePair = updateKeyValue;
 keyValueOne(33, "Mohammad Bin Qasim.")
 keyValueTwo(23, "Billy Bowdan")
 ```
+
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+
 
 ## Interface for array type.
 
@@ -211,6 +246,11 @@ console.log(employeeOne) // ok
 console.log(employeeTwo) // ok
 ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+
 ## Interface can be extended.
 
 Interfaces can be extended to one or more interfaces. This makes interfaces more flexible or reusable.
@@ -252,6 +292,10 @@ let person: Employee = {
 
 
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 
 # Type Assertions 
 
@@ -287,7 +331,10 @@ employee.name = "yasir" // ok
 employee.role = "ux designer" // ok
 ```
 
-type assertions for objects will go here.
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 
 # Enums
 
@@ -335,6 +382,11 @@ enum PrintMeida {
 } // string enum initialized with string values.
 ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+
 # What is actually Type Narrowing?
 
 - Type narrowing is actually a narrow down a general type to more specific and precise one.
@@ -352,3 +404,56 @@ if(typeOf x === "number") {
 
 console.log(x.toFixed(2)) // error: methods of type number are not assignable to type string.
 ```
+
+## Narrowing with InstanceOf
+
+The `instanceOf` operator is used to narrow down the object type to a more specific class of interface type. 
+
+```typescript
+interface Shape {
+  draw(): void;
+}
+
+class Circle implements Shape {
+  draw() {
+    console.log("Drawing Circle")
+  }
+}
+
+class Square implements Shape {
+  draw() {
+    console.log("Drawing Square")
+  }
+}
+
+
+function drawShape(shape: Shape) {
+  if(shape instanceOf Circle) {
+    shape.draw(); // Drawing Circle
+  }
+}
+
+drawShape(new Circle()) // ok => Drawing Circle.
+drawShape(new Square()) // No result/output.
+```
+
+## Narrowing with null and undefined
+
+The Null and undefined types can be used to narrow a union type to a `non-null` or `non-undefined` type. 
+
+```TYPESCRIPT
+let y: string | null;
+y= 'stringOne';
+
+
+if(y !== null) {
+  console.log(y.toUpperCase()) // ok
+  y = null;
+}
+
+console.log(y.toUpperCase()) //  Error: y is now possibly null.
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
