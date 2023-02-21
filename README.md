@@ -457,3 +457,22 @@ console.log(y.toUpperCase()) //  Error: y is now possibly null.
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
+
+# Null and Undefined.
+
+- Javascript has two primitives values for signaling absent, uninitalized or empty values: which is `null` and `Undefined`.
+- typescript also provide same type of these values but they are depend on the fact that in `tsconfig.json` the `strickNullChecks` option is enabled or not.
+
+- when `strictNullChecks` is off, the compiler will not check the for `null` and `undefined` values, which will eventually lead to more bugs and exceptions. So it's alwasy recommended, `strictNullChecks` option should be enabled.
+
+```typescript
+function doSomethingHere(x: string | null) {
+  if(x === null) {
+    console.log("If true log the value:", x)
+  } else {
+    console.log(x.toUpperCase()); 
+  }
+}
+
+doSomethingHere("stringOne") // STRINONE
+```
