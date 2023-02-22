@@ -476,3 +476,23 @@ function doSomethingHere(x: string | null) {
 
 doSomethingHere("stringOne") // STRINONE
 ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+# Less Common Primitives.
+
+Apart from `string`, `number`, `boolean`, `null` and `undefined`. There are less common primitives also in javavscript, which is `bigInt` and `Symbol`.
+
+## BigInt 
+
+- BigInt in javavascript is used to represent the very large integers. In typescript, you can get  `BigInt` by calling the function `BigInit()` or writing biginit literal by adding an `n` to the end.
+- Note: make sure to change the compiler option to `es2020 or later` in tsconfig.json.
+
+```typescript
+let integer__One: bigint = BigInt(100); // with function.
+let integer__two: bigint = 100n; // with literal.
+console.log(integer__One) // 100 
+console.log(integer__two) // 100
+```
