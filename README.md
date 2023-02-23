@@ -496,3 +496,21 @@ let integer__two: bigint = 100n; // with literal.
 console.log(integer__One) // 100 
 console.log(integer__two) // 100
 ```
+
+## Symbol
+
+- Symbol is javascript primitive which is used to create unique global reference via function.
+- Symbols are unique and immutable.
+
+```typescript
+const firstName = Symbol("yasir");
+const lastName = Symbol("khan");
+
+if(firstName === lastName) {
+  console.log("This condition will return error.") // error 
+}
+```
+
+<div align="right">
+    <em><b><a href="#">↥ back to top</a></b></em>
+</div>
