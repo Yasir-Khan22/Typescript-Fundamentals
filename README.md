@@ -514,3 +514,19 @@ if(firstName === lastName) {
 <div align="right">
     <em><b><a href="#">↥ back to top</a></b></em>
 </div>
+
+# More On Functions.
+
+funcitons are building-block of any programming language.But in javascript, it's more significant. functional programming in Javascript is used to implement the concepts of object oriented programming like classes, objects, abstraction, and polymorphism etc.
+
+## Named Function.
+
+The function which is declare and and called by it's name.
+
+```typescript
+function displayuserName() {
+  console.log("Hello typescript")
+}
+
+displayuserName(); // output: Hello typescript
+```
