@@ -517,11 +517,12 @@ if(firstName === lastName) {
 
 # More On Functions.
 
-funcitons are building-block of any programming language.But in javascript, it's more significant. functional programming in Javascript is used to implement the concepts of object oriented programming like classes, objects, abstraction, and polymorphism etc.
+- Funcitons are building-block of any programming language.But in javascript, it's more significant. 
+- Functional programming in Javascript is used to implement the concepts of object oriented programming like classes, objects, abstraction, and polymorphism etc.
 
 ## Named Function.
 
-The function which is declare and and called by it's name.
+- The function which is declare and and called by it's name.
 
 ```typescript
 function displayuserName() {
@@ -529,4 +530,23 @@ function displayuserName() {
 }
 
 displayuserName(); // output: Hello typescript
+```
+
+<div align="right">
+    <em><b><a href="#">↥ back to top</a></b></em>
+</div>
+
+
+## Anonymous Function
+
+- Anonymous Functions are defined as an expression and further stored in a variable.
+- The type of function which does not have a name but rather these are stored in a variable.
+- These Functions are invoked by calling the name of the variable.
+
+```typescript
+let variableOne = function() { // function expression.
+  console.log("This function supposed to return the string.")
+}
+
+variableOne(); // output: This function supposed to return the string.
 ```
