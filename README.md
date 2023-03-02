@@ -532,10 +532,6 @@ function displayuserName() {
 displayuserName(); // output: Hello typescript
 ```
 
-<div align="right">
-    <em><b><a href="#">↥ back to top</a></b></em>
-</div>
-
 
 ## Anonymous Function
 
@@ -550,3 +546,7 @@ let variableOne = function() { // function expression.
 
 variableOne(); // output: This function supposed to return the string.
 ```
+
+<div align="right">
+    <em><b><a href="#">↥ back to top</a></b></em>
+</div>
