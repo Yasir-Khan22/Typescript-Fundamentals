@@ -532,7 +532,6 @@ function displayuserName() {
 displayuserName(); // output: Hello typescript
 ```
 
-
 ## Anonymous Function
 
 - Anonymous Functions are defined as an expression and further stored in a variable.
