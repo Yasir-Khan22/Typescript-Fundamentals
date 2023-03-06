@@ -555,3 +555,7 @@ variableOne(); // output: This function supposed to return the string.
 
 - In javascript, functions are first-class citizens because you can treat them as like any other object. You can assign them to a variable, you can return them from anothe function, you can assign them to another function, also you can assign them to another object, you can assign them properties and read back those propperties etc.
 - When you don't want to use function arguments use call signatures.
+
+<div align="right">
+    <em><b><a href="#">↥ back to top</a></b></em>
+</div>
