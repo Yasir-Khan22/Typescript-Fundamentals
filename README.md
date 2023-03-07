@@ -1,6 +1,23 @@
-Typescript Basics
+# Table of Contents
+- [Typescript Basics](#typescript-basics)
+- [Type Annotations for variables](#type-annotations-for-variables)
+- [Function anotations](#function-annotations)
+- [Object Types](#object-types)
+- [Union Types](#union-types)
+- [Type Aliases](#type-aliases)
+- [Interface](#interface)
+- [Difference between Interface and Type aliases.](#difference-between-interface-and-type-aliases)
+- [Type Assertions](#type-assertions)
+- [Enums](#enums)
+- [What is actually Type Narrowing?](#what-is-actually-type-narrowing)
+- [Null and Undefined.](#null-and-undefined)
+- [Function anotations](#function-annotations)
+- [Less Common Primitives.](#less-common-primitives)
+- [More On Functions.](#more-on-functions)
 
-## Typescript is all about ***TYPES***
+
+## Typescript Basics
+### Typescript is all about ***TYPES***
 1. NUMBER
 2. STRING
 3. BOOLEAN 
