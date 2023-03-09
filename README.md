@@ -576,3 +576,9 @@ variableOne(); // output: This function supposed to return the string.
 <div align="right">
     <em><b><a href="#">↥ back to top</a></b></em>
 </div>
+
+## Construct Functions
+
+- In Javascript, you can invoke the function the with the `new` keyword (also called a `constructor function`).
+- In typescript, you can define those kinds of functions using the construct signature.
+- example goes here.
