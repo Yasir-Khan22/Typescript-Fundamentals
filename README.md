@@ -583,3 +583,5 @@ variableOne(); // output: This function supposed to return the string.
 <div align="right">
     <em><b><a href="#">↥ back to top</a></b></em>
 </div>
+
+## Generic Functions
