@@ -585,3 +585,5 @@ variableOne(); // output: This function supposed to return the string.
 </div>
 
 ## Generic Functions
+
+- It’s common to write a function where the types of the input relate to the type of the output, or where the types of two inputs are related in some way.
