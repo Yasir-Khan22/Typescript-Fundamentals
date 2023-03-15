@@ -587,3 +587,18 @@ variableOne(); // output: This function supposed to return the string.
 ## Generic Functions
 
 - It’s common to write a function where the types of the input relate to the type of the output, or where the types of two inputs are related in some way.
+- Generics appears in typescript code inside angle brackets, in the format of `<T>`.
+
+- Take a look at following example:
+
+```javascript
+function authentication(auth) {
+  return auth;
+}
+// You can make type-safe in typescript like this:
+function authentication<T>(auth: T): T {
+  return auth;
+}
+
+const result = authentication(123) // ok
+```
