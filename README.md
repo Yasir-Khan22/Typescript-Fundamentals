@@ -606,3 +606,5 @@ const result = authentication(123) // ok
 <div align="right">
     <em><b><a href="#">↥ back to top</a></b></em>
 </div>
+
+* * *
