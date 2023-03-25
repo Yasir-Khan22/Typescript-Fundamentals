@@ -532,6 +532,8 @@ if(firstName === lastName) {
     <em><b><a href="#">↥ back to top</a></b></em>
 </div>
 
+* * *
+
 # More On Functions.
 
 - Funcitons are building-block of any programming language.But in javascript, it's more significant. 
