@@ -475,6 +475,8 @@ console.log(y.toUpperCase()) //  Error: y is now possibly null.
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+* * *
+
 # Null and Undefined.
 
 - Javascript has two primitives values for signaling absent, uninitalized or empty values: which is `null` and `Undefined`.
