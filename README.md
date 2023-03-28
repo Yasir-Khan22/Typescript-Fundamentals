@@ -313,6 +313,7 @@ let person: Employee = {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+* * *
 
 # Type Assertions 
 
