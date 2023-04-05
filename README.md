@@ -308,7 +308,6 @@ let person: Employee = {
 |In Typescript, the interface supports the feature of implementation where it can implement the objects or members of the class from the derived classes. |  In type aliases, type again does not support the feature of implemention where it is only for declaring variables as they cannot implement other types.
 
 
-
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
