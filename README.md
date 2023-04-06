@@ -599,6 +599,7 @@ variableOne(); // output: This function supposed to return the string.
 function authentication(auth) {
   return auth;
 }
+
 // You can make type-safe in typescript like this:
 function authentication<T>(auth: T): T {
   return auth;
