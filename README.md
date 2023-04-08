@@ -282,7 +282,6 @@ interface Employee extends Person {
   status: string;
 }
 
-
 let person: Employee = {
   name: "string";
   gender: "Male";
