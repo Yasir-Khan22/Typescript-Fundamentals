@@ -341,7 +341,6 @@ interface Person {
   name: string
   role: string
 }
-
 let employee = <Person> {};
 employee.name = "yasir" // ok
 employee.role = "ux designer" // ok
