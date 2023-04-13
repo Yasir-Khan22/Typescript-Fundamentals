@@ -350,7 +350,6 @@ employee.role = "ux designer" // ok
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-
 # Enums
 
 - Enums also known as enumerations, added into Javascript by Typescript.
