@@ -369,7 +369,7 @@ enum SocialMedia {
   Twitter,
   Instagram,
   Linkedin,
-}
+} // ok
 ```
 - In the above example, `SocialMedia` enum the initial member starts from value `0` and incremented to each member by `1`. You just not only assign seqential values. These enums can have any values. `Yeah`
  
