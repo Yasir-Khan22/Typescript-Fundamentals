@@ -451,6 +451,10 @@ drawShape(new Circle()) // ok => Drawing Circle.
 drawShape(new Square()) // No result/output.
 ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Narrowing with null and undefined
 
 The Null and undefined types can be used to narrow a union type to a `non-null` or `non-undefined` type. 
