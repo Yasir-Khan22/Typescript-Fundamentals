@@ -446,7 +446,6 @@ function drawShape(shape: Shape) {
     shape.draw(); // Drawing Circle
   }
 }
-
 drawShape(new Circle()) // ok => Drawing Circle.
 drawShape(new Square()) // No result/output.
 ```
