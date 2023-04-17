@@ -460,7 +460,7 @@ The Null and undefined types can be used to narrow a union type to a `non-null` 
 
 ```TYPESCRIPT
 let y: string | null;
-y= 'stringOne';
+y = 'stringOne';
 
 
 if(y !== null) {
