@@ -250,9 +250,8 @@ interface Employee {
 
 const employeeOne: Employee = {
   empId: 2,
-  empName: "Khilji"
+  empName: "Imran"
 }
-
 const employeeTwo: Employee = {
   empId: 3,
   empName: "Saluddin",
