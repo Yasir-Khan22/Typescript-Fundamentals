@@ -278,7 +278,7 @@ interface Person {
   gender: string;
 }
 interface Employee extends Person {
-  status: string;
+  status: string; // ok
 }
 // person
 let person: Employee = {
