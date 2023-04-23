@@ -271,7 +271,6 @@ console.log(employeeTwo) // ok
 
 Interfaces can be extended to one or more interfaces. This makes interfaces more flexible or reusable.
 
-
 ```typescript
 interface Person {
   name: string;
