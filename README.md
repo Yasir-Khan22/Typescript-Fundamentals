@@ -59,7 +59,7 @@ console.log(add("stringOne", "stringTwo")) // stringOnestringTwo
 function Add(a: number, b: string) {
     return a, b;
 }
-console.log(Add(10, "stringThree")) // 10stringThree
+console.log(Add(10, " stringThree")) // 10 stringThree
 ```
 
 <div align="right">
