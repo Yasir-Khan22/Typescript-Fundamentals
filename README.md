@@ -295,7 +295,7 @@ let person: Employee = {
 |Interfaces create a new name that is used everywhere. | Type aliases don\'t create a new name.|
 |An interface can have multiple merged declarations. | Type alias for an object type literal cannot have multiple merged declarations.|
 | It uses the "interface " keyword for declaring an interface that can contain the methods, properties, and events to describe data shapes. | It uses the "type" keyword for creating new type alias not a new type instead of a new name for a type defined.
-| interface supports the use of the object. | The type aliases supports only the data types and not the use of an object.
+| Interface supports the use of the object. | The type aliases supports only the data types and not the use of an object.
 | Interface keyword when used for declaring two interfaces with the same name has the capability to merge these two interfaces. | Type keyword when used for declaring two different types where the variable names declared are same then the typescript compiler will throw an error. 
 | The interface cannot be used with other types declaration as done with type in typescript. | the types can be used for other types also such as primitives, unions and tuples.
 | The interfaces can be extended withthe type alias or interface can be extended by type also. where interface can easily extend classes is one of the best features of the typescript interface. | In typescript type, or type aliases cannot be extended and hence the type cannot extend class as it does not support this feature.
