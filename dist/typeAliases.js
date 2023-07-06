@@ -1,22 +1,22 @@
 "use strict";
-// type functionTypes = number | string;
-// let variable: string;
+let variable;
+function displayId(id) {
+    try {
+        if (typeof id === typeof variable) {
+            return "here is my id" + id;
+        }
+    }
+    catch (error) {
+        console.log("error occured");
+        return "This is my id " + id.toString();
+    }
+}
+displayId("EtE342");
+displayId("543ET3");
+displayId(234321);
 function printCoordinates(id) {
     console.log("Cooridnates of x-asix:" + id.x);
     console.log("Cooridnates of y-axis:" + id.y);
 }
 printCoordinates({ x: 43, y: 34 });
-// This is so powerfull editor.
-// This is so wondefull editor.
-// This is so powerfull editor.
-// This is so powerfull editor.
-// This is so powerfull editor.
-// This is so powerfull editor.
-// this is so powerfull editor.
-// this is so powerfull editor.
-// this is so powerfull editor.
-// This is so powerfull editor.
-// this is so powerfull editor.
-// This is so powerfull editor.
-// This is so powerfull editor.
 //# sourceMappingURL=typeAliases.js.map
