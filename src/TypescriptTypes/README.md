@@ -54,6 +54,35 @@ console.log(backGroundColor);
 console.log(foreGroundColor);
 ```
 
+### Tuples
+
+1. Tuples are typed array with pre-defined length and types for each index.
+2. Tuples allow each element in the array to be a known type of value.
+3. Tuples has fixed number of elements where each elements has it's own types.
+
+```typescript
+// simple tuple.
+const personalities: [string, number] = ['yasir', 20];
+console.log(personalities) // yasir, 20
+
+// tuples can be destructured.
+const employees: [string, string] = ["Zubair", "Fasih"];
+const [firstEmployee, secndEmployee] = employees;
+console.log(firstEmployee) // Zubair
+console.log(secondEmployee) // Fasih
+
+// tuples can be used as function return types.
+
+function getDirections(): [number, number] {
+    return [30, 40]
+}
+console.log(getDirections()) // [30, 40]
+
+let coordinates = getDirections();// [30, 40] 
+console.log(coordinates); // [30, 40] 
+```
+
+
 ### Null and Undefined
  
 1. A variable is `undefined` when it's `uninitialized` it means wheny it's not assgined any value after begin declared. 
