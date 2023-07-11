@@ -14,7 +14,7 @@
  */
 
 // let points: [string, number] = ["33", 25];
-// // DESTRUCTURE
+// DESTRUCTURE
 // let [x, y] = points;
 
 // console.log(x);
