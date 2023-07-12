@@ -11,7 +11,7 @@
  *? Tuples can be use with destructuring.
  */
 // let points: [string, number] = ["33", 25];
-// // DESTRUCTURE
+// DESTRUCTURE
 // let [x, y] = points;
 // console.log(x);
 // console.log(y);
