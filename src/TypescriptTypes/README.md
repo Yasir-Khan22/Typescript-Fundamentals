@@ -62,7 +62,7 @@ console.log(foreGroundColor);
 
 ```typescript
 // simple tuple.
-const personalities: [string, number] = ['yasir', 20];
+const personalities: [string, number] = ['Yasir', 20];
 console.log(personalities) // yasir, 20
 
 // tuples can be destructured.
