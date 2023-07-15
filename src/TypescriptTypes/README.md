@@ -66,7 +66,7 @@ const personalities: [string, number] = ['Yasir', 20];
 console.log(personalities) // yasir, 20
 
 // tuples can be destructured.
-const employees: [string, string] = ["Zubair", "Fasih"];
+const employees: [string, string] = ["Zubair", "Faizan"];
 const [firstEmployee, secndEmployee] = employees;
 console.log(firstEmployee) // Zubair
 console.log(secondEmployee) // Fasih
