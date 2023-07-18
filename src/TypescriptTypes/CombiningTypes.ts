@@ -24,7 +24,6 @@ console.log(typeof value)
  * It is represented by `&`.
  */
 
-
 interface A {
     a: string;
 }
