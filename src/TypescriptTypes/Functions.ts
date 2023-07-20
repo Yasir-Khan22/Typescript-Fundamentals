@@ -6,6 +6,8 @@ function addition(a: string, b: string): string {
     return a + b;
 }
 
+console.log(addition("stringOne", "stringTwo"));
+
 // function expression.
 function subtraction(a: number, b: number): number {
     return a - b
