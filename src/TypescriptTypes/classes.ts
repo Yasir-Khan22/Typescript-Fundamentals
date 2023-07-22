@@ -25,7 +25,6 @@ console.log(dog.age)
 console.log(dog.makeSound())
 
 
-
 class Dog extends Animal {
     breed: string;
 
