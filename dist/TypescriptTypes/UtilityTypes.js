@@ -9,4 +9,7 @@
  * Exclude
  * and many more..
  */
+/**
+ * Partial
+ */ 
 //# sourceMappingURL=UtilityTypes.js.map
