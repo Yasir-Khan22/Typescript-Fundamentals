@@ -11,5 +11,16 @@
  */
 /**
  *? Partial
+ *? Pick
+ *? Omit
+ *? Readonly
+ *? Record
+ *? Exclude
+ *? Extract
+ *? NonNullable
+ *? Parameters
+ *? ReturnType
+ *? IntanceType
+ *? Awaited
  */ 
 //# sourceMappingURL=UtilityTypes.js.map
