@@ -1,4 +1,4 @@
-// Here advanced types will go here.
+// Here advanced types will go.
 
 /**
  * 1. Mapped Types.
