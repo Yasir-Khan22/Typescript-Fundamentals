@@ -26,3 +26,7 @@ const readOnlyPerson: Readonly<Person> = {
     name: "Yasir",
     age: "22"
 }
+
+/**
+ * ? conditional types. 
+ */
