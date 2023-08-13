@@ -4,4 +4,7 @@ const readOnlyPerson = {
     name: "Yasir",
     age: "22"
 };
+/**
+ * ? conditional types.
+ */ 
 //# sourceMappingURL=AdvancedTypes.js.map
