@@ -30,3 +30,7 @@ const readOnlyPerson: Readonly<Person> = {
 /**
  * ? conditional types. 
  */
+
+/**
+ * Recursive Types.
+ */
