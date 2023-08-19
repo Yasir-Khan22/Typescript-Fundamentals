@@ -6,5 +6,8 @@ const readOnlyPerson = {
 };
 /**
  * ? conditional types.
- */ 
+ */
+/**
+ * Recursive Types.
+ */
 //# sourceMappingURL=AdvancedTypes.js.map
