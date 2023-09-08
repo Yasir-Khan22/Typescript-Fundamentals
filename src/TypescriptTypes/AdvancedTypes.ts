@@ -33,4 +33,5 @@ const readOnlyPerson: Readonly<Person> = {
 
 /**
  * Recursive Types.
+ * Contined.
  */
